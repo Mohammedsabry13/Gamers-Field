@@ -1,0 +1,235 @@
+/* ===== WISHLIST GRID ===== */
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.wish-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.wish-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(255, 46, 0, 0.12);
+}
+
+/* Remove btn (heart) */
+.btn-remove-wish {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ff2e00;
+  font-size: 1rem;
+  transition: all 0.25s;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-remove-wish:hover {
+  background: #ff2e00;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.wish-card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  background: #f3f3f3;
+}
+
+.wish-card-img-placeholder {
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(135deg, #f3f3f3, #ebebeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #ddd;
+}
+
+.wish-card-body {
+  padding: 14px;
+}
+
+.wish-card-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.wish-card-price {
+  font-weight: 700;
+  color: #ff2e00;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.wish-card-price span {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: #888;
+}
+
+.btn-add-to-cart-wish {
+  width: 100%;
+  background: #ff2e00;
+  color: #fff;
+  border: none;
+  padding: 9px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  font-family: 'Alexandria', sans-serif;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.btn-add-to-cart-wish:hover {
+  background: #991c00;
+  transform: translateY(-1px);
+}
+
+/* Stock badge */
+.stock-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+
+.stock-in {
+  background: #e6f9f0;
+  color: #1a7a4a;
+}
+
+.stock-out {
+  background: #ffeaea;
+  color: #cc2222;
+}
+
+/* Empty state */
+.empty-wishlist {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.empty-wishlist-icon {
+  font-size: 5rem;
+  color: #f0d0cc;
+  margin-bottom: 20px;
+  animation: heartbeat 1.5s ease infinite;
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.empty-wishlist h4 {
+  color: #444;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.empty-wishlist p {
+  color: #999;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.btn-go-shop {
+  background: #ff2e00;
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Alexandria', sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.btn-go-shop:hover {
+  background: #991c00;
+  color: #fff;
+}
+
+/* Select all / clear toolbar */
+.wishlist-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.wishlist-count {
+  font-size: 0.9rem;
+  color: #888;
+  font-weight: 500;
+}
+
+.wishlist-count strong {
+  color: #ff2e00;
+}
+
+.btn-clear-all {
+  background: transparent;
+  border: 1.5px solid #e0e0e0;
+  color: #888;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: 'Alexandria', sans-serif;
+  cursor: pointer;
+  transition: all 0.25s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-clear-all:hover {
+  border-color: #cc2222;
+  color: #cc2222;
+}

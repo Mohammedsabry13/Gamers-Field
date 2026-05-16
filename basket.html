@@ -1,0 +1,461 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/basket.css" />
+  <link rel="icon" href="assets/image/icnos/logo_page.jpg" />
+  <title>GamersField</title>
+</head>
+
+<body>
+  <!-- Start-Header -->
+  <!-- Start-navbar -->
+  <header class="header-section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/image/icnos/logo.jpg" alt="logo" />
+        </a>
+
+        <!-- Mobile toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- nav-item -->
+          <ul class="navbar-nav ms-auto me-5">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown">
+                الأجهزة
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="products.html">لابتوب</a></li>
+                <li><a class="dropdown-item" href="products.html">كمبيوتر مكتبي</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown">
+                مكونات داخلية
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="products.html">معالج</a></li>
+                <li><a class="dropdown-item" href="products.html">كارت شاشة</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown">
+                الأكسسوارات
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="products.html">ماوس</a></li>
+                <li><a class="dropdown-item" href="products.html">كيبورد</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">تواصل معنا</a>
+            </li>
+          </ul>
+
+          <!-- Header Icons -->
+          <div class="header-icons">
+            <div class="search-wrapper">
+              <button class="search-icon">
+                <img src="assets/image/icnos/search_icon.png" alt="" style="width: 60%; height: auto;">
+              </button>
+              <input type="text" class="search-input" placeholder="ابحث عن المنتجات..." />
+            </div>
+            <a href="basket.html" class="icon-link">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+            <a href="profile.html" class="icon-link">
+              <i class="fas fa-user"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End-navbar -->
+  <!-- End-Header -->
+
+  <main>
+    <!-- Start-Breadcrumb -->
+    <ul class="breadcrumb">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li>السلة</li>
+    </ul>
+    <!-- End-Breadcrumb -->
+
+    <!-- Start-Contents_basket -->
+    <section>
+      <div class="container my-5">
+        <div class="row">
+          <!-- Main Content -->
+          <div class="col-lg-8">
+            <div class="cart-header mb-4">
+              <h2 class="cart-title">محتويات السلة</h2>
+            </div>
+
+            <div class="row text-muted d-none d-md-flex mb-1 px-3"
+              style="line-height: 40px;border-top: 1px solid #e7e8e9;">
+              <div class="col-md-5">المنتجات</div>
+              <div class="col-md-4 text-center">الكمية</div>
+              <div class="col-md-3 text-end">السعر</div>
+            </div>
+
+            <div class="product-list">
+              <!-- Product 1 -->
+              <div class="product-item" data-price="50000">
+                <div class="row align-items-center py-3">
+                  <div class="col-md-5 col-12">
+                    <div class="d-flex align-items-center">
+                      <img src="assets/image/laptop-3.jpg" class="product-image" alt="لابتوب"
+                        style="margin-left: 15px;">
+                      <div class="me-3">
+                        <h5 class="product-name mb-1">لابتوب Dell Inspiron 15 - Core i7</h5>
+                        <button class="btn-remove">
+                          <i class="fas fa-trash-alt"></i> إزالة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-6 mt-3 mt-md-0">
+                    <div class="quantity-control">
+                      <button class="btn-quantity decrease">-</button>
+                      <span class="quantity-value">1</span>
+                      <button class="btn-quantity increase">+</button>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6 mt-3 mt-md-0 text-end">
+                    <div class="product-price">50,000 ج.م</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 2 -->
+              <div class="product-item" data-price="450">
+                <div class="row align-items-center py-3">
+                  <div class="col-md-5 col-12">
+                    <div class="d-flex align-items-center">
+                      <img src="assets/image/Mues.jpg" class="product-image" alt="ماوس" style="margin-left: 15px;">
+                      <div class="me-3">
+                        <h5 class="product-name mb-1">ماوس لاسلكي احترافي</h5>
+                        <button class="btn-remove">
+                          <i class="fas fa-trash-alt"></i> إزالة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-6 mt-3 mt-md-0">
+                    <div class="quantity-control">
+                      <button class="btn-quantity decrease">-</button>
+                      <span class="quantity-value">1</span>
+                      <button class="btn-quantity increase">+</button>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6 mt-3 mt-md-0 text-end">
+                    <div class="product-price">450 ج.م</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="continue-shopping mt-4">
+              <a href="index.html" class="btn-continue">
+                <img src="assets/image/icnos/bake.png" alt="" style="width: 13%; height: auto;vertical-align: bottom;">
+                <span>العودة للتسوق</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Sidebar Summary -->
+          <div class="col-lg-4" style="padding-top: 75px;">
+            <div class=" cart-summary">
+              <div class="summary-section">
+                <div class="summary-row">
+                  <span>الحساب الجزئي</span>
+                  <span id="subtotal">50,450 ج.م</span>
+                </div>
+                <hr>
+                <div id="coupon-discount-row" class="summary-row coupon-applied d-none">
+                  <span>كوبون الخصم <button id="remove-coupon-btn" class="remove-coupon">[حذف]</button></span>
+                  <span id="coupon-discount-amount">-0 ج.م</span>
+                </div>
+                <div class="summary-row">
+                  <span>الشحن التقريبي</span>
+                  <span id="shipping">100 ج.م</span>
+                </div>
+                <div class="shipping-note">ربما تتغير قيمة الشحن حسب مكان التوصيل</div>
+                <hr>
+                <div class="summary-row total-row">
+                  <span>الإجمالي</span>
+                  <span id="total">50,550 ج.م</span>
+                </div>
+              </div>
+              <button class="btn-purchase w-100">متابعة الشراء</button>
+              <div class="coupon-section mt-3">
+                <h6 class="coupon-title">كوبون الخصم</h6>
+                <input type="text" id="coupon-input" class="form-control" placeholder="كوبون الخصم">
+                <button class="btn btn-coupon" id="apply-coupon-btn">إضافة الكوبون</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End-Contents_basket -->
+
+    <!-- Start-laptop-galaxy-section_4 -->
+    <section>
+      <div class="laptop-showcase-arena container cosmic-white-bg">
+        <div class="header-flex-commander">
+          <div>
+            <h2 class="title-majestic-bold">منتجات قد تعجبك</h2>
+            <div class="crimson-accent-line"></div>
+          </div>
+        </div>
+
+        <!-- Main Content Layout -->
+        <div class="content-galaxy-wrapper">
+          <!-- Products Grid -->
+          <div class="products-constellation-grid-2">
+            <!-- Product Card 1 -->
+            <div class="product-stellar-card">
+              <img src="assets/image/laptop-1.jpg" alt="Product" class="product-image-frame" />
+              <h3 class="product-title-whisper">
+                لابتوب ماك بوك MacBook Pro 13" Core i5 2.4Ghz 512GB
+              </h3>
+              <div class="product-footer-harmony">
+                <p class="price-crimson-bold">
+                  70,000
+                  <span> جنية </span>
+                </p>
+                <a class="nav-link" href="basket.html">
+                  <i class="fa fa-shopping-cart cart-icon-stellar"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-stellar-card">
+              <img src="assets/image/laptop-2.jpg" alt="Product" class="product-image-frame" />
+              <h3 class="product-title-whisper">
+                لابتوب ماك بوك MacBook Pro 13" Core i5 2.4Ghz 512GB
+              </h3>
+              <div class="product-footer-harmony">
+                <p class="price-crimson-bold">
+                  70,000
+                  <span> جنية </span>
+                </p>
+                <a class="nav-link" href="basket.html">
+                  <i class="fa fa-shopping-cart cart-icon-stellar"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-stellar-card">
+              <img src="assets/image/laptop-3.jpg" alt="Product" class="product-image-frame" />
+              <h3 class="product-title-whisper">
+                لابتوب ماك بوك MacBook Pro 13" Core i5 2.4Ghz 512GB
+              </h3>
+              <div class="product-footer-harmony">
+                <p class="price-crimson-bold">
+                  70,000
+                  <span> جنية </span>
+                </p>
+                <a class="nav-link" href="basket.html">
+                  <i class="fa fa-shopping-cart cart-icon-stellar"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-stellar-card">
+              <img src="assets/image/laptop-4.jpg" alt="Product" class="product-image-frame" />
+              <h3 class="product-title-whisper">
+                لابتوب ماك بوك MacBook Pro 13" Core i5 2.4Ghz 512GB
+              </h3>
+              <div class="product-footer-harmony">
+                <p class="price-crimson-bold">
+                  70,000
+                  <span> جنية </span>
+                </p>
+                <a class="nav-link" href="basket.html">
+                  <i class="fa fa-shopping-cart cart-icon-stellar"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End-laptop-galaxy-section_4 -->
+
+    <!-- Start-footer -->
+    <footer>
+      <div class="footer-icon pt-4">
+        <div class="container">
+          <!-- Logo + Social -->
+          <div class="logo-siez-icons">
+            <div class="d-flex mt-3 mt-md-0 order-2 order-md-1">
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/faecbook.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/x.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/insta.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/whats`app.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/snab.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/tiktok.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/youtuobe.png" alt="" />
+              </a>
+            </div>
+            <div class="order-1 order-md-2">
+              <img src="assets/image/icnos/logofooter.png" alt="Gamers Field" class="footer-logo" />
+            </div>
+          </div>
+
+          <hr class="border-secondary my-4" />
+
+          <!-- Links Section -->
+          <div class="row g-4 small">
+            <!-- خريطة المنتجات -->
+            <div class="col-12 col-md-8 col-lg-9">
+              <h5 class="fw-bold mb-1">خريطة المنتجات</h5>
+              <div class="crimson-accent-line-footer mb-3"></div>
+
+              <div class="row g-4">
+                <div class="col-6 col-md-2">
+                  <ul class="list-unstyled lh-lg">
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">لابتوبات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">كمبيوتر مكتبي</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">شاشات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">ماوس</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                  <ul class="list-unstyled lh-lg">
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">سماعات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">مايكات صوت</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">كبلات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">كيسة</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                  <ul class="list-unstyled lh-lg">
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">هاردات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">كروت شاشة</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">رامات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">هاردات خارجية</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                  <ul class="list-unstyled lh-lg">
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">اكسسوارات ألعاب</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">كراسي ألعاب</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">إضاءات RGB</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">قطع غيار</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- روابط مهمة -->
+            <div class="col-12 col-md-4 col-lg-3">
+              <h5 class="fw-bold mb-1">روابط مهمة</h5>
+              <div class="crimson-accent-line-footer mb-3"></div>
+              <ul class="list-unstyled lh-lg">
+                <li>
+                  <a href="products.html" class="text-white text-decoration-none footer-link">الشروط والاحكام</a>
+                </li>
+                <li>
+                  <a href="products.html" class="text-white text-decoration-none footer-link">سياسة الخصوصية</a>
+                </li>
+                <li>
+                  <a href="products.html" class="text-white text-decoration-none footer-link">التسجيل</a>
+                </li>
+                <li>
+                  <a href="products.html" class="text-white text-decoration-none footer-link">الرئيسية</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="text-center py-4 mt-4" style="background-color: #ff2e00"></div>
+      </div>
+    </footer>
+    <!-- End-footer -->
+  </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="assets/js/basket.js"></script>
+
+</html>
+
+
+

@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/complete-purchase-process.css" />
+  <link rel="icon" href="assets/image/icnos/logo_page.jpg" />
+  <title>GamersField</title>
+</head>
+
+<body>
+  <!-- Start-Header -->
+  <!-- Start-navbar -->
+  <header class="header-section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/image/icnos/logo.jpg" alt="logo" />
+        </a>
+
+        <!-- Mobile toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- nav-item -->
+          <ul class="navbar-nav ms-auto me-5">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown">
+                الأجهزة
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="products.html">لابتوب</a></li>
+                <li><a class="dropdown-item" href="products.html">كمبيوتر مكتبي</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown">
+                مكونات داخلية
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="products.html">معالج</a></li>
+                <li><a class="dropdown-item" href="products.html">كارت شاشة</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown">
+                الأكسسوارات
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="products.html">ماوس</a></li>
+                <li><a class="dropdown-item" href="products.html">كيبورد</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">تواصل معنا</a>
+            </li>
+          </ul>
+
+          <!-- Header Icons -->
+          <div class="header-icons">
+            <div class="search-wrapper">
+              <button class="search-icon">
+                <img src="assets/image/icnos/search_icon.png" alt="" style="width: 60%; height: auto;">
+              </button>
+              <input type="text" class="search-input" placeholder="ابحث عن المنتجات..." />
+            </div>
+            <a href="basket.html" class="icon-link">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+            <a href="profile.html" class="icon-link">
+              <i class="fas fa-user"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End-navbar -->
+  <!-- End-Header -->
+
+
+  <main>
+
+    <!-- Start-Breadcrumb -->
+    <ul class="breadcrumb">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="basket.html">السلة</a></li>
+      <li>اكمال عملية الشراء</li>
+    </ul>
+    <!-- End-Breadcrumb -->
+
+    <!-- Start-Complete the purchase process -->
+    <section>
+      <div class="checkout-page container my-5">
+        <h1 class="checkout-title">اكمال عملية الشراء</h1>
+        <p class="login-prompt">
+          لديك حساب بالفعل؟ <a href="login.html" class="login-link">اضغط هنا للدخول</a>
+        </p>
+
+        <div class="row">
+          <!-- Right Column: Billing and Shipping -->
+          <div class="col-lg-8">
+            <div class="billing-shipping-section">
+              <h2 class="section-title">الفواتير والشحن</h2>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="firstName" class="form-label">الاسم الأول*</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="الاسم الأول">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastName" class="form-label">الاسم الأخير*</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="الاسم الأخير">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="phone" class="form-label">رقم الجوال*</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="رقم الجوال">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">البريد الاليكتروني*</label>
+                  <input type="email" class="form-control" id="email" placeholder="البريد الاليكتروني">
+                </div>
+              </div>
+
+              <h2 class="section-title mt-4">الشحن والتوصيل</h2>
+              <div class="conservatism">
+                <div class="col-12 col-md-12">
+                  <div class="form-group">
+                    <label for="governorate" class="form-label">المحافظة*</label>
+                    <select class="form-select" id="governorate">
+                      <option value="">اختر المحافظة</option>
+                      <option value="cairo">القاهرة</option>
+                      <option value="giza">الجيزة</option>
+                      <option value="alexandria">الإسكندرية</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12">
+                  <div class="form-group">
+                    <label for="region" class="form-label">المنطقة*</label>
+                    <select class="form-select" id="region">
+                      <option value="">اختر المنطقة</option>
+                      <option value="region1">المنطقة الأولى</option>
+                      <option value="region2">المنطقة الثانية</option>
+                    </select>
+
+                    <div class="row mt-3">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label for="address" class="form-label">تفاصيل العنوان*</label>
+                          <textarea class="form-control" id="address" rows="4"
+                            placeholder="اكتب تفاصيل العنوان"></textarea>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="createAccount">
+                <label class="form-check-label" for="createAccount">
+                  قم بعمل حساب لي
+                </label>
+              </div>
+
+              <h2 class="section-title mt-4">ملاحظات ومعلومات اضافية</h2>
+              <div class="mb-3">
+                <label for="notes" class="form-label">ملاحظات</label>
+                <textarea class="form-control" id="notes" rows="3"
+                  placeholder="اكتب ملاحظاتك الخاصة بالطلب او اي تفاصيل"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left Column: Order Details -->
+          <div class="col-lg-4">
+            <h5 class="card-title">تفاصيل طلبك</h5>
+            <div class="order-summary-card">
+              <div class="order-items-list">
+                <div class="order-item-header payment-method-section-buttom ">
+                  <span>المنتجات</span>
+                  <span>الحساب الجزئي</span>
+                </div>
+                <div class="order-item">
+                  <span class="item-name">لابتوب Dell Inspiron 15 - Core i7 - 16GB RAM - 512GB SSD</span>
+                  <span class="item-price">50,000 ج.م</span>
+                </div>
+                <div class="order-item">
+                  <span class="item-name">ماوس جيمرز cc5547</span>
+                  <span class="item-price">450 ج.م</span>
+                </div>
+              </div>
+
+              <div class="summary-details">
+                <div class="summary-row payment-method-section-buttom ">
+                  <span>الحساب الجزئي</span>
+                  <span>50,450 ج.م</span>
+                </div>
+                <div class="summary-row discount-row payment-method-section-buttom">
+                  <span>كوبون الخصم <span class="remove-coupon">[حذف]</span></span>
+                  <span class="discount-amount">-550 ج.م</span>
+                </div>
+                <div class="summary-row payment-method-section-buttom">
+                  <span>الشحن</span>
+                  <span>100 ج.م</span>
+                </div>
+                <div class="summary-row total-row">
+                  <span>الاجمالي</span>
+                  <span>50,100 ج.م</span>
+                </div>
+              </div>
+
+              <div class="payment-method-section">
+                <h3 class="section-subtitle">طريقة الدفع</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="paymentMethod" id="payByCard" checked>
+                  <label class="form-check-label" for="payByCard">
+                    عن طريق بطاقات الدفع
+                    <img src="assets/image/icnos/visa.png" alt="Visa Mastercard" class="payment-icons">
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="paymentMethod" id="payOnDelivery">
+                  <label class="form-check-label" for="payOnDelivery">
+                    عن طريق الدفع عند الاستلام
+                  </label>
+                </div>
+              </div>
+
+              <div class="terms-and-conditions-section">
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" value="" id="newsletterConsent">
+                  <label class="form-check-label" for="newsletterConsent">
+                    أرغب في استلام رسائل بريد إلكتروني حصرية تتضمن خصومات ومعلومات عن المنتجات.
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="termsAgree">
+                  <label class="form-check-label" for="termsAgree">
+                    لقد قرأت شروط وأحكام الموقع الإلكتروني وأوافق عليها .
+                  </label>
+                </div>
+              </div>
+
+              <button class="btn-purchase-now">شراء الان</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  End-Complete the purchase process -->
+
+    <!-- Start-footer -->
+    <footer>
+      <div class="footer-icon pt-4">
+        <div class="container">
+          <!-- Logo + Social -->
+          <div class="logo-siez-icons">
+            <div class="d-flex mt-3 mt-md-0 order-2 order-md-1">
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/faecbook.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/x.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/insta.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/whats`app.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/snab.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/tiktok.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/youtuobe.png" alt="" />
+              </a>
+            </div>
+            <div class="order-1 order-md-2">
+              <img src="assets/image/icnos/logofooter.png" alt="Gamers Field" class="footer-logo" />
+            </div>
+          </div>
+
+          <hr class="border-secondary my-4" />
+
+          <!-- Links Section -->
+          <div class="row g-4 small">
+            <!-- خريطة المنتجات -->
+            <div class="col-12 col-md-8 col-lg-9">
+              <h5 class="fw-bold mb-1">خريطة المنتجات</h5>
+              <div class="crimson-accent-line-footer mb-3"></div>
+
+              <div class="row g-4">
+                <div class="col-6 col-md-2">
+                  <ul class="list-unstyled lh-lg">
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">لابتوبات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">كمبيوتر مكتبي</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">شاشات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">ماوس</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                  <ul class="list-unstyled lh-lg">
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">سماعات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">مايكات صوت</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">كبلات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">كيسة</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                  <ul class="list-unstyled lh-lg">
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">هاردات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">كروت شاشة</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">رامات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">هاردات خارجية</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                  <ul class="list-unstyled lh-lg">
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">اكسسوارات ألعاب</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">كراسي ألعاب</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">إضاءات RGB</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">قطع غيار</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- روابط مهمة -->
+            <div class="col-12 col-md-4 col-lg-3">
+              <h5 class="fw-bold mb-1">روابط مهمة</h5>
+              <div class="crimson-accent-line-footer mb-3"></div>
+              <ul class="list-unstyled lh-lg">
+                <li>
+                  <a href="products.html" class="text-white text-decoration-none footer-link">الشروط والاحكام</a>
+                </li>
+                <li>
+                  <a href="products.html" class="text-white text-decoration-none footer-link">سياسة الخصوصية</a>
+                </li>
+                <li>
+                  <a href="products.html" class="text-white text-decoration-none footer-link">التسجيل</a>
+                </li>
+                <li>
+                  <a href="products.html" class="text-white text-decoration-none footer-link">الرئيسية</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="text-center py-4 mt-4" style="background-color: #ff2e00"></div>
+      </div>
+    </footer>
+    <!-- End-footer -->
+  </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="assets/js/complete-purchase-process.js"></script>
+
+</html>
+
+

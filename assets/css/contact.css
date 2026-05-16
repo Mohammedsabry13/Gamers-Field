@@ -1,0 +1,267 @@
+/* ===== CONTACT HERO ===== */
+.contact-hero {
+  background: linear-gradient(135deg, #000 0%, #1a0500 60%, #ff2e00 100%);
+  padding: 70px 0 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('assets/image/Mask group.png') center/cover no-repeat;
+  opacity: 0.08;
+}
+
+.contact-hero h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-hero p {
+  color: #ccc;
+  font-size: 1.05rem;
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  padding: 60px 0 80px;
+}
+
+/* ===== INFO CARDS ===== */
+.info-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  padding: 28px 22px;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 28px rgba(255, 46, 0, 0.12);
+}
+
+.info-card-icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff2e00, #991c00);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.info-card h5 {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.info-card p {
+  color: #777;
+  font-size: 0.88rem;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.info-card a {
+  color: #ff2e00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.info-card a:hover {
+  text-decoration: underline;
+}
+
+/* ===== CONTACT FORM ===== */
+.contact-form-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  padding: 36px 32px;
+}
+
+.contact-form-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.contact-form .form-label {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 11px 14px;
+  font-family: 'Alexandria', sans-serif;
+  font-size: 0.93rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+  border-color: #ff2e00;
+  box-shadow: 0 0 0 3px rgba(255, 46, 0, 0.1);
+  outline: none;
+}
+
+.btn-send {
+  background: linear-gradient(135deg, #ff2e00, #991c00);
+  color: #fff;
+  border: none;
+  padding: 13px 40px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Alexandria', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-send:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 46, 0, 0.3);
+}
+
+/* ===== SUCCESS MESSAGE ===== */
+.success-msg {
+  display: none;
+  background: #e6f9f0;
+  border: 1.5px solid #1a7a4a;
+  border-radius: 10px;
+  padding: 16px 20px;
+  color: #1a7a4a;
+  font-weight: 600;
+  font-size: 0.95rem;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.success-msg.show {
+  display: flex;
+}
+
+/* ===== SOCIAL SECTION ===== */
+.social-contact-section {
+  background: #000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.social-contact-section h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.social-contact-section p {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 28px;
+}
+
+.social-contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.social-contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  font-family: 'Alexandria', sans-serif;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.sc-facebook {
+  background: #1877f2;
+  color: #fff;
+}
+
+.sc-whatsapp {
+  background: #25d366;
+  color: #fff;
+}
+
+.sc-instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: #fff;
+}
+
+.sc-tiktok {
+  background: #010101;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.social-contact-btn:hover {
+  transform: translateY(-3px);
+  color: #fff;
+}
+
+/* ===== FAQ ===== */
+.faq-section {
+  padding: 60px 0;
+  background: #fafafa;
+}
+
+.faq-section h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.accordion-button {
+  font-family: 'Alexandria', sans-serif;
+  font-weight: 600;
+  color: #111;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ff2e00;
+  background: #fff8f7;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 3px rgba(255, 46, 0, 0.15);
+}
+
+.accordion-button::after {
+  margin-right: auto;
+  margin-left: 0;
+}

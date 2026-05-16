@@ -1,0 +1,468 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/product-details.css" />
+  <link rel="icon" href="assets/image/icnos/logo_page.jpg" />
+  <title>GamersField</title>
+</head>
+
+<body>
+  <!-- Start-Header -->
+  <!-- Start-navbar -->
+  <header class="header-section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/image/icnos/logo.jpg" alt="logo" />
+        </a>
+
+        <!-- Mobile toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- nav-item -->
+          <ul class="navbar-nav ms-auto me-5">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown">
+                الأجهزة
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="products.html">لابتوب</a></li>
+                <li><a class="dropdown-item" href="products.html">كمبيوتر مكتبي</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown">
+                مكونات داخلية
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="products.html">معالج</a></li>
+                <li><a class="dropdown-item" href="products.html">كارت شاشة</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown">
+                الأكسسوارات
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="products.html">ماوس</a></li>
+                <li><a class="dropdown-item" href="products.html">كيبورد</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">تواصل معنا</a>
+            </li>
+          </ul>
+
+          <!-- Header Icons -->
+          <div class="header-icons">
+            <div class="search-wrapper">
+              <button class="search-icon">
+                <img src="assets/image/icnos/search_icon.png" alt="" style="width: 60%; height: auto;">
+              </button>
+              <input type="text" class="search-input" placeholder="ابحث عن المنتجات..." />
+            </div>
+            <a href="basket.html" class="icon-link">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+            <a href="profile.html" class="icon-link">
+              <i class="fas fa-user"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End-navbar -->
+  <!-- End-Header -->
+
+
+  <main>
+    <!-- Start-Breadcrumb -->
+    <ul class="breadcrumb">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="products.html">الأجهزة</a></li>
+      <li><a href="products.html">لابتوب</a></li>
+      <li>معالج Intel Core i7-12700K - الجيل 12 - 12 نواة | 20 خيط معالجة </li>
+    </ul>
+    <!-- End-Breadcrumb -->
+
+    <!-- Start-Product photos and purchase -->
+    <section>
+      <div class="container-fluid mt-5">
+        <div class="product-container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="image-section">
+                <img id="mainImage" class="main-image" src="assets/image/laptop-1.jpg" alt="Dell Inspiron 15">
+                <div class="thumbnail-container">
+                  <img class="thumbnail active" data-index="0" src="assets/image/laptop-1.jpg" alt="View 1">
+                  <img class="thumbnail" data-index="1" src="assets/image/laptop-2.jpg" alt="View 2">
+                  <img class="thumbnail" data-index="2" src="assets/image/laptop-3.jpg" alt="View 3">
+                  <img class="thumbnail" data-index="3" src="assets/image/laptop-4.jpg" alt="View 4">
+                  <img class="thumbnail" data-index="4" src="assets/image/laptop-5.jpg" alt="View 5">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="product-info">
+                <h1 class="product-title">لابتوب Dell Inspiron 15 - Core i7 - 16GB RAM - 512GB SSD</h1>
+                <div class="price-section">
+                  <span class="price">50,000</span>
+                  <span class="currency">جنيه</span>
+                </div>
+
+                <p class="product-description">
+                  استمتع بأداء قوي وسرعة استجابة عالية مع لابتوب Dell Inspiron 15 بمعالج Intel Core i7 الجيل 11، وذاكرة
+                  RAM بسعة 16 جيجابايت، وسعة تخزين SSD سريعة بحجم 512 جيجابايت. مثالي للعمل والدراسة والألعاب الخفيفة.
+                </p>
+
+                <div class="quantity-section">
+                  <span class="voluem-button">
+                    <button class="quantity-btn minus" onclick="decreaseQuantity()">−</button>
+                    <input type="number" class="quantity-input" id="quantity" value="1" readonly>
+                    <button class="quantity-btn plus" onclick="increaseQuantity()">+</button>
+                  </span>
+                  <button class="add-to-cart-btn">أضف الى السلة</button>
+                </div>
+
+
+                <div class="shipping-info">
+                  <img src="assets/image/icnos/car.png" alt="" style="width: 3%; height: auto;">
+                  <span>الشحن خلال 3-1 أيام عمل ويختلف المدة حسب المحافظة</span>
+                </div>
+
+                <div class="return-info">
+                  <img src="assets/image/icnos/box.png" alt="" style="width: 3%; height: auto; vertical-align: top;">
+                  <span>ارجاع المنتج خلال 15 يوما من تاريخ الاستلام.
+                    <br>
+                    تكلفة الشحن والتوصيل غير مسترجعة
+                    .</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End-Product photos and purchase -->
+
+
+    <!-- Start-Detail and product description -->
+    <section>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div style="margin: 50px 0px 20px 0px;">
+              <h2 class="title-majestic-bold">المواصفات الفنية</h2>
+              <div class="crimson-accent-line"></div>
+            </div>
+
+            <div class="specs-container">
+              <div class="specs-table">
+                <div class="specs-row">
+                  <div class="specs-label" style="color: black;">المواصفات</div>
+                  <div class="specs-value" style="color: black;">التفاصيل</div>
+                </div>
+                <div class="specs-row">
+                  <div class="specs-label">الموديل</div>
+                  <div class="specs-value">Intel Core i7-12700K</div>
+                </div>
+                <div class="specs-row">
+                  <div class="specs-label">عدد الأنوية</div>
+                  <div class="specs-value">12 نواة</div>
+                </div>
+                <div class="specs-row">
+                  <div class="specs-label">عدد الخيوط</div>
+                  <div class="specs-value">20 Thread</div>
+                </div>
+                <div class="specs-row">
+                  <div class="specs-label">السرعة</div>
+                  <div class="specs-value">3.6GHz تصل إلى 5.0 GHz</div>
+                </div>
+                <div class="specs-row">
+                  <div class="specs-label">الكاش</div>
+                  <div class="specs-value">25MB Smart Cache</div>
+                </div>
+                <div class="specs-row">
+                  <div class="specs-label">المقبس</div>
+                  <div class="specs-value">LGA 1700</div>
+                </div>
+                <div class="specs-row">
+                  <div class="specs-label">يدعم كسر السرعة</div>
+                  <div class="specs-value">نعم</div>
+                </div>
+                <div class="specs-row">
+                  <div class="specs-label">الكارت المدمج</div>
+                  <div class="specs-value">Intel UHD Graphics 770</div>
+                </div>
+                <div class="specs-row">
+                  <div class="specs-label">الضمان</div>
+                  <div class="specs-value">3 سنوات</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End-Detail and product description -->
+
+    <!-- Start-laptop-galaxy-section_4 -->
+    <section>
+      <div class="laptop-showcase-arena container cosmic-white-bg">
+        <div class="header-flex-commander">
+          <div>
+            <h2 class="title-majestic-bold">منتجات ذات صلة</h2>
+            <div class="crimson-accent-line"></div>
+          </div>
+        </div>
+
+        <!-- Main Content Layout -->
+        <div class="content-galaxy-wrapper">
+          <!-- Products Grid -->
+          <div class="products-constellation-grid-2">
+            <!-- Product Card 1 -->
+            <div class="product-stellar-card">
+              <img src="assets/image/laptop-1.jpg" alt="Product" class="product-image-frame" />
+              <h3 class="product-title-whisper">
+                لابتوب ماك بوك MacBook Pro 13" Core i5 2.4Ghz 512GB
+              </h3>
+              <div class="product-footer-harmony">
+                <p class="price-crimson-bold">
+                  70,000
+                  <span> جنية </span>
+                </p>
+                <a class="nav-link" href="basket.html">
+                  <i class="fa fa-shopping-cart cart-icon-stellar"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-stellar-card">
+              <img src="assets/image/laptop-2.jpg" alt="Product" class="product-image-frame" />
+              <h3 class="product-title-whisper">
+                لابتوب ماك بوك MacBook Pro 13" Core i5 2.4Ghz 512GB
+              </h3>
+              <div class="product-footer-harmony">
+                <p class="price-crimson-bold">
+                  70,000
+                  <span> جنية </span>
+                </p>
+                <a class="nav-link" href="basket.html">
+                  <i class="fa fa-shopping-cart cart-icon-stellar"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-stellar-card">
+              <img src="assets/image/laptop-3.jpg" alt="Product" class="product-image-frame" />
+              <h3 class="product-title-whisper">
+                لابتوب ماك بوك MacBook Pro 13" Core i5 2.4Ghz 512GB
+              </h3>
+              <div class="product-footer-harmony">
+                <p class="price-crimson-bold">
+                  70,000
+                  <span> جنية </span>
+                </p>
+                <a class="nav-link" href="basket.html">
+                  <i class="fa fa-shopping-cart cart-icon-stellar"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-stellar-card">
+              <img src="assets/image/laptop-4.jpg" alt="Product" class="product-image-frame" />
+              <h3 class="product-title-whisper">
+                لابتوب ماك بوك MacBook Pro 13" Core i5 2.4Ghz 512GB
+              </h3>
+              <div class="product-footer-harmony">
+                <p class="price-crimson-bold">
+                  70,000
+                  <span> جنية </span>
+                </p>
+                <a class="nav-link" href="basket.html">
+                  <i class="fa fa-shopping-cart cart-icon-stellar"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End-laptop-galaxy-section_4 -->
+
+
+    <!-- Start-footer -->
+    <footer>
+      <div class="footer-icon pt-4">
+        <div class="container">
+          <!-- Logo + Social -->
+          <div class="logo-siez-icons">
+            <div class="d-flex mt-3 mt-md-0 order-2 order-md-1">
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/faecbook.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/x.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/insta.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/whats`app.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/snab.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/tiktok.png" alt="" />
+              </a>
+              <a href="contact.html" class="text-white social-link">
+                <img src="assets/image/icnos/youtuobe.png" alt="" />
+              </a>
+            </div>
+            <div class="order-1 order-md-2">
+              <img src="assets/image/icnos/logofooter.png" alt="Gamers Field" class="footer-logo" />
+            </div>
+          </div>
+
+          <hr class="border-secondary my-4" />
+
+          <!-- Links Section -->
+          <div class="row g-4 small">
+            <!-- خريطة المنتجات -->
+            <div class="col-12 col-md-8 col-lg-9">
+              <h5 class="fw-bold mb-1">خريطة المنتجات</h5>
+              <div class="crimson-accent-line-footer mb-3"></div>
+
+              <div class="row g-4">
+                <div class="col-6 col-md-2">
+                  <ul class="list-unstyled lh-lg">
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">لابتوبات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">كمبيوتر مكتبي</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">شاشات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">ماوس</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                  <ul class="list-unstyled lh-lg">
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">سماعات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">مايكات صوت</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">كبلات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">كيسة</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                  <ul class="list-unstyled lh-lg">
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">هاردات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">كروت شاشة</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">رامات</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">هاردات خارجية</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                  <ul class="list-unstyled lh-lg">
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">اكسسوارات ألعاب</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">كراسي ألعاب</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">إضاءات RGB</a>
+                    </li>
+                    <li>
+                      <a href="products.html" class="text-white text-decoration-none footer-link">قطع غيار</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- روابط مهمة -->
+            <div class="col-12 col-md-4 col-lg-3">
+              <h5 class="fw-bold mb-1">روابط مهمة</h5>
+              <div class="crimson-accent-line-footer mb-3"></div>
+              <ul class="list-unstyled lh-lg">
+                <li>
+                  <a href="products.html" class="text-white text-decoration-none footer-link">الشروط والاحكام</a>
+                </li>
+                <li>
+                  <a href="products.html" class="text-white text-decoration-none footer-link">سياسة الخصوصية</a>
+                </li>
+                <li>
+                  <a href="products.html" class="text-white text-decoration-none footer-link">التسجيل</a>
+                </li>
+                <li>
+                  <a href="products.html" class="text-white text-decoration-none footer-link">الرئيسية</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="text-center py-4 mt-4" style="background-color: #ff2e00"></div>
+      </div>
+    </footer>
+    <!-- End-footer -->
+  </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="assets/js/product-details.js"></script>
+
+</html>
+
+

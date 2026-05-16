@@ -1,0 +1,238 @@
+/* profile.css */
+
+.profile-section {
+  padding: 40px 0 80px;
+}
+
+/* Sidebar */
+.profile-sidebar {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  position: sticky;
+  top: 20px;
+}
+
+.profile-avatar-wrap {
+  background: linear-gradient(135deg, #ff2e00 0%, #991c00 100%);
+  padding: 30px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  font-size: 2rem;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.profile-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.profile-phone {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.profile-nav {
+  padding: 12px 0;
+}
+
+.profile-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  border-right: 3px solid transparent;
+}
+
+.profile-nav-link i {
+  font-size: 1rem;
+  width: 20px;
+  text-align: center;
+  color: #888;
+  transition: color 0.25s;
+}
+
+.profile-nav-link:hover,
+.profile-nav-link.active {
+  background: #fff5f3;
+  color: #ff2e00;
+  border-right-color: #ff2e00;
+}
+
+.profile-nav-link:hover i,
+.profile-nav-link.active i {
+  color: #ff2e00;
+}
+
+.logout-link:hover {
+  background: #fff0f0;
+  color: #cc0000;
+  border-right-color: #cc0000;
+}
+
+.logout-link:hover i {
+  color: #cc0000;
+}
+
+/* Main Card */
+.profile-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  padding: 30px;
+}
+
+.profile-card-header {
+  margin-bottom: 28px;
+}
+
+.section-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+.sub-section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+/* Form */
+.profile-form .form-label {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.profile-form .form-control,
+.profile-form .form-select {
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 11px 14px;
+  font-family: "Alexandria", sans-serif;
+  font-size: 0.95rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.profile-form .form-control:focus,
+.profile-form .form-select:focus {
+  border-color: #ff2e00;
+  box-shadow: 0 0 0 3px rgba(255, 46, 0, 0.12);
+  outline: none;
+}
+
+.profile-form .form-control.is-invalid,
+.profile-form .form-select.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  font-size: 0.8rem;
+  color: #dc3545;
+  margin-top: 4px;
+  display: none;
+}
+
+.form-control.is-invalid~.invalid-feedback,
+.form-select.is-invalid~.invalid-feedback {
+  display: block;
+}
+
+.btn-save {
+  background: #ff2e00;
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Alexandria", sans-serif;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 8px;
+}
+
+.btn-save:hover {
+  background: #991c00;
+  transform: translateY(-1px);
+}
+
+.btn-save:active {
+  transform: translateY(0);
+}
+
+/* Stats row */
+.stats-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 120px;
+  background: #fafafa;
+  border: 1.5px solid #eee;
+  border-radius: 12px;
+  padding: 20px 16px;
+  text-align: center;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.stat-card:hover {
+  border-color: #ff2e00;
+  box-shadow: 0 4px 12px rgba(255, 46, 0, 0.1);
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ff2e00;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .profile-sidebar {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .profile-card {
+    padding: 20px;
+  }
+
+  .section-heading {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/contact.css" />
+  <title>GamersField - تواصل معنا</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header-section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/image/icnos/logo.jpg" alt="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-5">
+            <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown">الأجهزة</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="products.html">لابتوب</a></li>
+                <li><a class="dropdown-item" href="products.html">كمبيوتر مكتبي</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown">مكونات داخلية</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="products.html">معالج</a></li>
+                <li><a class="dropdown-item" href="products.html">كارت شاشة</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown">الأكسسوارات</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="products.html">ماوس</a></li>
+                <li><a class="dropdown-item" href="products.html">كيبورد</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">تواصل معنا</a></li>
+          </ul>
+          <div class="header-icons">
+            <div class="search-wrapper">
+              <button class="search-icon">
+                <img src="assets/image/icnos/search_icon.png" alt="" style="width:60%;height:auto;">
+              </button>
+              <input type="text" class="search-input" placeholder="ابحث عن المنتجات..." />
+            </div>
+            <a href="basket.html" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+            <a href="profile.html" class="icon-link"><i class="fas fa-user"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <div class="contact-hero">
+      <div class="container">
+        <h1><i class="fas fa-headset me-2"></i> تواصل معنا</h1>
+        <p>فريق الدعم جاهز لمساعدتك في أي وقت — ما عندكش سؤال كبير!</p>
+      </div>
+    </div>
+
+    <!-- Info Cards -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="row g-4 mb-5">
+          <div class="col-md-4">
+            <div class="info-card">
+              <div class="info-card-icon"><i class="fas fa-phone-alt"></i></div>
+              <h5>رقم الهاتف</h5>
+              <p><a href="tel:+201234567890">01234567890</a></p>
+              <p>من السبت إلى الخميس</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-card">
+              <div class="info-card-icon"><i class="fas fa-envelope"></i></div>
+              <h5>البريد الإلكتروني</h5>
+              <p><a href="mailto:support@gamersfield.com">support@gamersfield.com</a></p>
+              <p>الرد خلال 24 ساعة</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-card">
+              <div class="info-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <h5>موقعنا</h5>
+              <p>القاهرة، مصر<br>مدينة نصر، شارع التحرير</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form + Map -->
+        <div class="row g-4">
+          <!-- Form -->
+          <div class="col-lg-7">
+            <div class="contact-form-card">
+              <h3>أرسل لنا رسالة</h3>
+              <div class="crimson-accent-line mb-4"></div>
+              <form class="contact-form" id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">الاسم *</label>
+                    <input type="text" class="form-control" id="cName" placeholder="اسمك الكريم" required />
+                    <div class="invalid-feedback">الاسم مطلوب</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">رقم الجوال *</label>
+                    <input type="tel" class="form-control" id="cPhone" placeholder="01xxxxxxxxx" required />
+                    <div class="invalid-feedback">الجوال مطلوب</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">البريد الإلكتروني</label>
+                    <input type="email" class="form-control" id="cEmail" placeholder="example@email.com" />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">موضوع الرسالة *</label>
+                    <select class="form-select" id="cSubject" required>
+                      <option value="">اختر الموضوع</option>
+                      <option>استفسار عن منتج</option>
+                      <option>متابعة طلب</option>
+                      <option>مشكلة في الدفع</option>
+                      <option>إرجاع أو استبدال</option>
+                      <option>شكوى</option>
+                      <option>أخرى</option>
+                    </select>
+                    <div class="invalid-feedback">اختر موضوع الرسالة</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">رسالتك *</label>
+                    <textarea class="form-control" id="cMsg" rows="5" placeholder="اكتب رسالتك هنا..."
+                      required></textarea>
+                    <div class="invalid-feedback">الرسالة مطلوبة</div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn-send">
+                      <i class="fas fa-paper-plane"></i> إرسال الرسالة
+                    </button>
+                  </div>
+                  <div class="col-12">
+                    <div class="success-msg" id="successMsg">
+                      <i class="fas fa-check-circle fa-lg"></i>
+                      تم إرسال رسالتك بنجاح! سيتواصل معك فريقنا قريباً.
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Map placeholder -->
+          <div class="col-lg-5">
+            <div
+              style="border-radius:16px;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,0.1);height:100%;min-height:400px;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.1779!2d31.3236!3d30.0626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAzJzQ1LjQiTiAzMcKwMTknMjUuMCJF!5e0!3m2!1sar!2seg!4v1234567890"
+                width="100%" height="100%" style="border:0;min-height:400px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Links -->
+    <div class="social-contact-section">
+      <div class="container">
+        <h3>تابعنا على السوشيال ميديا</h3>
+        <p>ابقَ على اطلاع بأحدث العروض والمنتجات</p>
+        <div class="social-contact-links">
+          <a href="contact.html" class="social-contact-btn sc-facebook"><i class="fab fa-facebook-f"></i> فيسبوك</a>
+          <a href="contact.html" class="social-contact-btn sc-whatsapp"><i class="fab fa-whatsapp"></i> واتساب</a>
+          <a href="contact.html" class="social-contact-btn sc-instagram"><i class="fab fa-instagram"></i> إنستجرام</a>
+          <a href="contact.html" class="social-contact-btn sc-tiktok"><i class="fab fa-tiktok"></i> تيك توك</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="container">
+        <h2>الأسئلة الشائعة</h2>
+        <div class="crimson-accent-line mb-4"></div>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item border-0 mb-3"
+            style="border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                كم يستغرق وقت التوصيل؟
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" style="color:#555;font-size:0.92rem;">
+                يصلك طلبك خلال 2-5 أيام عمل داخل القاهرة والجيزة، و3-7 أيام للمحافظات الأخرى. يتم إرسال رقم التتبع عبر
+                الرسائل النصية فور شحن الطلب.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 mb-3"
+            style="border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                هل يمكنني إرجاع المنتج؟
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" style="color:#555;font-size:0.92rem;">
+                نعم! نوفر ضمان استرداد كامل خلال 14 يوم من استلام المنتج، شريطة أن يكون في حالته الأصلية مع كامل
+                مستلزماته وفاتورة الشراء.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 mb-3"
+            style="border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                ما هي طرق الدفع المتاحة؟
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" style="color:#555;font-size:0.92rem;">
+                نقبل الدفع عند الاستلام (Cash on Delivery) بالإضافة إلى بطاقات Visa/Mastercard ومحافظ فودافون كاش
+                وانستاباي.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 mb-3"
+            style="border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                هل المنتجات لها ضمان؟
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" style="color:#555;font-size:0.92rem;">
+                جميع منتجاتنا أصلية 100% ومصحوبة بضمان الشركة المصنعة. اللابتوبات تأتي بضمان سنة كاملة، وبعض المنتجات
+                بضمانات مخصصة مذكورة في صفحة المنتج.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-icon pt-4">
+        <div class="container">
+          <div class="logo-siez-icons">
+            <div class="d-flex mt-3 mt-md-0 order-2 order-md-1">
+              <a href="contact.html" class="text-white social-link"><img src="assets/image/icnos/faecbook.png" alt="" /></a>
+              <a href="contact.html" class="text-white social-link"><img src="assets/image/icnos/x.png" alt="" /></a>
+              <a href="contact.html" class="text-white social-link"><img src="assets/image/icnos/insta.png" alt="" /></a>
+              <a href="contact.html" class="text-white social-link"><img src="assets/image/icnos/whats`app.png" alt="" /></a>
+              <a href="contact.html" class="text-white social-link"><img src="assets/image/icnos/snab.png" alt="" /></a>
+              <a href="contact.html" class="text-white social-link"><img src="assets/image/icnos/tiktok.png" alt="" /></a>
+              <a href="contact.html" class="text-white social-link"><img src="assets/image/icnos/youtuobe.png" alt="" /></a>
+            </div>
+            <div class="order-1 order-md-2">
+              <img src="assets/image/icnos/logofooter.png" alt="Gamers Field" class="footer-logo" />
+            </div>
+          </div>
+          <hr class="border-secondary my-4" />
+          <div class="row small">
+            <div class="col-12 col-md-8 col-lg-9">
+              <h5 class="fw-bold mb-1">خريطة المنتجات</h5>
+              <div class="crimson-accent-line-footer mb-3"></div>
+              <div class="row">
+                <div class="col-sm-3 col-md-2">
+                  <ul class="list-unstyled lh-lg">
+                    <li><a href="products.html" class="text-white text-decoration-none footer-link">لابتوبات</a></li>
+                    <li><a href="products.html" class="text-white text-decoration-none footer-link">كمبيوتر مكتبي</a></li>
+                    <li><a href="products.html" class="text-white text-decoration-none footer-link">شاشات</a></li>
+                    <li><a href="products.html" class="text-white text-decoration-none footer-link">ماوس</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                  <ul class="list-unstyled lh-lg">
+                    <li><a href="products.html" class="text-white text-decoration-none footer-link">سماعات</a></li>
+                    <li><a href="products.html" class="text-white text-decoration-none footer-link">مايكات صوت</a></li>
+                    <li><a href="products.html" class="text-white text-decoration-none footer-link">كبلات</a></li>
+                    <li><a href="products.html" class="text-white text-decoration-none footer-link">كيسة</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+              <h5 class="fw-bold mb-1">روابط مهمة</h5>
+              <div class="crimson-accent-line-footer mb-3"></div>
+              <ul class="list-unstyled lh-lg">
+                <li><a href="products.html" class="text-white text-decoration-none footer-link">الشروط والاحكام</a></li>
+                <li><a href="products.html" class="text-white text-decoration-none footer-link">سياسة الخصوصية</a></li>
+                <li><a href="index.html" class="text-white text-decoration-none footer-link">الرئيسية</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text-center py-4 mt-4" style="background-color:#ff2e00"></div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const fields = ['cName', 'cPhone', 'cSubject', 'cMsg'];
+      let valid = true;
+      fields.forEach(id => {
+        const el = document.getElementById(id);
+        if (!el.value.trim()) {
+          el.classList.add('is-invalid');
+          valid = false;
+        } else {
+          el.classList.remove('is-invalid');
+        }
+      });
+      if (valid) {
+        document.getElementById('successMsg').classList.add('show');
+        this.reset();
+        setTimeout(() => document.getElementById('successMsg').classList.remove('show'), 5000);
+      }
+    });
+  </script>
+</body>
+
+</html>
+
