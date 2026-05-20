@@ -32,4 +32,8 @@ A fully Arabic RTL front-end for **GamersField**, Egypt's go-to gaming store est
 - **About page** — Story, Values cards (Quality, Pricing, Support, Delivery), and CTA section
 - **Multi-level dropdown navbar** — Devices, Internal Components, Accessories
 - **Full RTL layout** — Bootstrap 5 RTL + Arabic Alexandria font throughout
-- Fully responsive across all screen sizes
+Fully responsive across all screen sizes
+
+⚠️ This template was originally created by Mohammed Sabry
+credit is required: github.com/Mohammedsabry13
+

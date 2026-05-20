@@ -1,3 +1,6 @@
+//======> MIT License - Copyright (c) Mohammed Sabry <======
+// ⚠️ This template was originally created by Mohammed Sabry (credit required): github.com/Mohammedsabry13
+
 //======> INITIALIZE SLIDER <======
 document.addEventListener("DOMContentLoaded", () => {
   new HeroSlider();
