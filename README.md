@@ -1,5 +1,7 @@
 # GamersField — Arabic Gaming E-Commerce Website
 
+![Screenshot](screenshot.png)
+
 A fully Arabic RTL front-end for **GamersField**, Egypt's go-to gaming store established in 2019. Selling laptops, desktop PCs, internal components, and gaming accessories with 100% authentic products and competitive pricing.
 
 ## 🛠️ Tech Stack
